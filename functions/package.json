@@ -1,0 +1,23 @@
+{
+  "name": "ma-billetterie-sereine-functions",
+  "version": "1.0.0",
+  "description": "Cloud Functions — Ma Billetterie Sereine",
+  "engines": {
+    "node": "22"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^6.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  }
+}

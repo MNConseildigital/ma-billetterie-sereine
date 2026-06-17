@@ -1,0 +1,81 @@
+name: mon_app_event_fresh2
+description: Ma Billetterie Sereine - Nouvelle version
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  firebase_database: ^12.3.0
+  cloud_firestore: ^6.3.0
+  firebase_storage: ^13.3.0
+  firebase_messaging: ^16.2.0
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10
+  cached_network_image: ^3.3.1
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.0.0
+  image_picker: ^1.1.2
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+  file_picker: ^11.0.2
+  google_mlkit_text_recognition: ^0.15.0
+  http: ^1.2.1
+  carousel_slider: ^5.0.0
+  image: ^4.2.0
+  flutter_image_compress: ^2.3.0  # Requis par ticket_image_service.dart
+  path_provider: ^2.1.4           # Requis par ticket_image_service.dart
+
+
+  # Géolocalisation
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  google_maps_flutter: ^2.5.3
+
+  # Utilitaires
+  url_launcher: ^6.3.0
+  intl: ^0.20.2
+  shared_preferences: ^2.3.0
+
+  # État
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.0
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#111111"
+  image: assets/images/logo.png
+  android: true
+  ios: true
+  web: false
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true

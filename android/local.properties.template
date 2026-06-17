@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# local.properties — FICHIER LOCAL, NE JAMAIS COMMITER (déjà dans .gitignore)
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Ce fichier est lu par android/build.gradle pour injecter les clés secrètes
+# dans le manifest via manifestPlaceholders, sans les exposer dans le VCS.
+#
+# INSTRUCTIONS :
+#   1. Renomme ce fichier en  local.properties  (retire le .template)
+#   2. Remplace la valeur ci-dessous par ta vraie clé
+#   3. Ne commit JAMAIS ce fichier — vérifie que .gitignore contient bien :
+#        local.properties
+#        *.properties
+#
+
+sdk.dir=C:\\Users\\mame-\\AppData\\Local\\Android\\Sdk
+
+# Clé Google Maps (Console Google Cloud > Identifiants > Clé API Android)
+# Pense à restreindre la clé à ton applicationId : com.mabilletteriesereine.app
+GOOGLE_MAPS_API_KEY=AIzaSyBm2_8LzCCHuMB1D-zHfs4WCjf1jZMzg1s

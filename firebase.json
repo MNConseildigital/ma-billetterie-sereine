@@ -1,0 +1,36 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ma-billetterie-sereine-aadf2",
+          "appId": "1:274497775549:android:d1766776e7530f013a54d4",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ma-billetterie-sereine-aadf2",
+          "configurations": {
+            "android": "1:274497775549:android:d1766776e7530f013a54d4",
+            "ios": "1:274497775549:ios:214ee3dd6009759e3a54d4"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

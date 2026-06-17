@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "274497775549",
+    "project_id": "ma-billetterie-sereine-aadf2",
+    "storage_bucket": "ma-billetterie-sereine-aadf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274497775549:android:593c95fb6d06b3a23a54d4",
+        "android_client_info": {
+          "package_name": "com.example.mon_app_event"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKzWwy3OdDu1h5R0NJVHIk0cs8vfH8W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274497775549:android:b462e2b5d707b9f73a54d4",
+        "android_client_info": {
+          "package_name": "com.mabilletteriesereine.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKzWwy3OdDu1h5R0NJVHIk0cs8vfH8W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274497775549:android:d1766776e7530f013a54d4",
+        "android_client_info": {
+          "package_name": "com.mabilletteriesereine.mon_app_event_fresh2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKzWwy3OdDu1h5R0NJVHIk0cs8vfH8W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274497775549:android:41c8369e295f9e373a54d4",
+        "android_client_info": {
+          "package_name": "com.mame.mon_app_event_fresh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKzWwy3OdDu1h5R0NJVHIk0cs8vfH8W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274497775549:android:afb690bd122df6b23a54d4",
+        "android_client_info": {
+          "package_name": "com.votrenom.mon_app_event_fresh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKzWwy3OdDu1h5R0NJVHIk0cs8vfH8W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

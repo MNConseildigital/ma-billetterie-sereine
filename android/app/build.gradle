@@ -1,0 +1,78 @@
+plugins {
+    id "com.android.application"
+    id "com.google.gms.google-services"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Lecture de la clé Google Maps depuis local.properties (jamais dans le VCS)
+// ─────────────────────────────────────────────────────────────────────────────
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def googleMapsApiKey = localProperties.getProperty('GOOGLE_MAPS_API_KEY')
+if (googleMapsApiKey == null || googleMapsApiKey.isEmpty()) {
+    throw new GradleException(
+        "GOOGLE_MAPS_API_KEY is missing in local.properties.\n" +
+        "Add the line:  GOOGLE_MAPS_API_KEY=AIzaSy...\n" +
+        "local.properties is gitignored — la clé ne sera jamais commitée."
+    )
+}
+
+android {
+    // ── Identifiants ──────────────────────────────────────────────────────────
+    // applicationId DÉFINITIF — ne jamais changer après publication Play Store
+    namespace  = "com.mabilletteriesereine.app"
+
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId  = "com.mabilletteriesereine.app"
+        minSdkVersion    flutter.minSdkVersion   // défini par Flutter (21)
+        targetSdk      = 36
+        versionCode    = 1       // ← incrémenter à chaque upload Play Store
+        versionName    = "1.0.0"
+        multiDexEnabled true
+
+        // Injection de la clé Maps dans le manifest via placeholder
+        manifestPlaceholders = [
+            GOOGLE_MAPS_API_KEY: googleMapsApiKey
+        ]
+    }
+
+    // ── Options de compilation ────────────────────────────────────────────────
+    compileOptions {
+        coreLibraryDesugaringEnabled true          // requis par flutter_local_notifications
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    // ── Build types ───────────────────────────────────────────────────────────
+    buildTypes {
+        release {
+            // Pour le Play Store : activer minification + obfuscation
+            // minifyEnabled true
+            // shrinkResources true
+            // proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug   // ← remplacer par signingConfigs.release avant publication
+        }
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+}
+
+flutter {
+    source = "../.."
+}

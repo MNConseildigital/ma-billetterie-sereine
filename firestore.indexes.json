@@ -1,0 +1,47 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isActive",  "order": "ASCENDING" },
+        { "fieldPath": "category",  "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isActive",  "order": "ASCENDING" },
+        { "fieldPath": "category",  "order": "ASCENDING" },
+        { "fieldPath": "date",      "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isActive",  "order": "ASCENDING" },
+        { "fieldPath": "featured",  "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "source",          "order": "ASCENDING" },
+        { "fieldPath": "dateComparable",  "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "source",  "order": "ASCENDING" },
+        { "fieldPath": "region",  "order": "ASCENDING" },
+        { "fieldPath": "date",    "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
