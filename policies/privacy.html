@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité – Ma Billetterie Sereine</title>
+    <meta name="description" content="Politique de confidentialité de l'application Ma Billetterie Sereine">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #4285f4;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        .last-update {
+            font-style: italic;
+            color: #666;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Politique de Confidentialité – Ma Billetterie Sereine</h1>
+    <p class="last-update">Dernière mise à jour : 18 juin 2026</p>
 
+    <h2>1. Introduction</h2>
+    <p>
+        Bienvenue sur Ma Billetterie Sereine ! Nous accordons une grande importance à la protection de vos données personnelles.
+        Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations
+        lorsque vous utilisez notre application.
+    </p>
+    <p>
+        En utilisant Ma Billetterie Sereine, vous acceptez les pratiques décrites dans cette politique.
+        Si vous n’êtes pas d’accord, veuillez ne pas utiliser notre application.
+    </p>
+
+    <h2>2. Données Collectées</h2>
+    <p>Nous collectons uniquement les données nécessaires au fonctionnement de l’application. Voici les types de données que nous pouvons collecter :</p>
+
+    <h3>Données Personnelles (Fournies par l’Utilisateur)</h3>
+    <ul>
+        <li><strong>Adresse email</strong> : Utilisée pour l’inscription et la connexion (via Firebase Auth).</li>
+        <li><strong>Nom d’utilisateur</strong> (optionnel) : Si vous choisissez d’en créer un.</li>
+        <li><strong>Billets et QR codes</strong> : Les données des billets que vous ajoutez (nom de l’événement, date, lieu, QR code, etc.).</li>
+        <li><strong>Images et PDF</strong> : Les fichiers que vous téléchargez pour vos billets (stockés sur Firebase Storage).</li>
+    </ul>
+
+    <h3>Données Techniques (Collectées Automatiquement)</h3>
+    <ul>
+        <li><strong>Identifiant de l’appareil</strong> : Utilisé pour identifier votre session (anonymisé).</li>
+        <li><strong>Adresse IP</strong> : Pour des raisons de sécurité et de détection des fraudes.</li>
+        <li><strong>Type d’appareil et version d’OS</strong> : Pour optimiser l’expérience utilisateur.</li>
+        <li><strong>Données d’utilisation</strong> : Pages consultées, fonctionnalités utilisées (anonymisées et agrégées).</li>
+    </ul>
+
+    <h3>Données de Localisation</h3>
+    <ul>
+        <li>Aucune localisation GPS n’est collectée.</li>
+        <li>Seules les villes que vous saisissez manuellement pour vos billets sont stockées.</li>
+    </ul>
+
+    <h2>3. Utilisation des Données</h2>
+    <p>Nous utilisons vos données uniquement pour les finalités suivantes :</p>
+
+    <table>
+        <tr>
+            <th>Type de Données</th>
+            <th>Utilisation</th>
+            <th>Base Légale (RGPD)</th>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>Création de compte, connexion, envoi de notifications</td>
+            <td>Consentement de l’utilisateur</td>
+        </tr>
+        <tr>
+            <td>Billets et QR codes</td>
+            <td>Stockage et affichage dans l’application</td>
+            <td>Exécution du contrat (fourniture du service)</td>
+        </tr>
+        <tr>
+            <td>Images/PDF</td>
+            <td>Affichage des billets dans l’application</td>
+            <td>Exécution du contrat</td>
+        </tr>
+        <tr>
+            <td>Données techniques</td>
+            <td>Amélioration de l’application, détection des bugs</td>
+            <td>Intérêt légitime</td>
+        </tr>
+        <tr>
+            <td>Adresse IP</td>
+            <td>Sécurité et prévention des fraudes</td>
+            <td>Intérêt légitime</td>
+        </tr>
+    </table>
+
+    <h2>4. Stockage et Sécurité</h2>
+
+    <h3>Où vos données sont-elles stockées ?</h3>
+    <ul>
+        <li>
+            <strong>Firebase (Google)</strong> : Nous utilisons les services Firebase Auth, Firestore et Storage pour héberger vos données.
+            <ul>
+                <li>Localisation des serveurs : Union Européenne (pour les utilisateurs européens) ou États-Unis (selon la configuration de Firebase).</li>
+                <li>Chiffrement : Toutes les données sont chiffrées en transit (HTTPS) et au repos (chiffrement AES-256 pour Firestore/Storage).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Combien de temps conservons-nous vos données ?</h3>
+    <ul>
+        <li>Données de compte : Tant que votre compte est actif.</li>
+        <li>Billets et groupes : Tant que vous ne les supprimez pas.</li>
+        <li>Données techniques : 30 jours maximum (anonymisées).</li>
+        <li>Sauvegardes : Supprimées automatiquement après 90 jours d’inactivité.</li>
+    </ul>
+
+    <h3>Sécurité</h3>
+    <ul>
+        <li>Authentification sécurisée : Mot de passe chiffré (via Firebase Auth).</li>
+        <li>Accès restreint : Seuls vous pouvez accéder à vos billets.</li>
+        <li>Pas de partage avec des tiers : Vos données ne sont jamais vendues ou partagées avec des entreprises tierces.</li>
+    </ul>
+
+    <h2>5. Partage des Données</h2>
+    <p>Nous ne partageons pas vos données personnelles avec des tiers, sauf dans les cas suivants :</p>
+    <ul>
+        <li>Avec votre consentement explicite (ex : partage de billets avec un ami via son email).</li>
+        <li>Pour respecter une obligation légale (ex : demande d’une autorité judiciaire).</li>
+        <li>Avec nos prestataires de services (ex : Firebase/Google) uniquement pour le fonctionnement de l’application. Ces prestataires sont liés par des accords de confidentialité stricts.</li>
+    </ul>
+
+    <h2>6. Vos Droits (RGPD)</h2>
+    <p>En tant qu’utilisateur européen, vous disposez des droits suivants sur vos données :</p>
+    <ul>
+        <li><strong>Droit d’accès</strong> : Vous pouvez demander une copie de toutes les données que nous détenons sur vous.</li>
+        <li><strong>Droit de rectification</strong> : Vous pouvez corriger ou mettre à jour vos données personnelles.</li>
+        <li><strong>Droit à l’oubli (effacement)</strong> : Vous pouvez supprimer votre compte et toutes vos données à tout moment.</li>
+        <li><strong>Droit à la portabilité</strong> : Vous pouvez exporter vos données dans un format structuré (ex : JSON).</li>
+        <li><strong>Droit d’opposition</strong> : Vous pouvez vous opposer au traitement de vos données pour des raisons légitimes.</li>
+        <li><strong>Droit de limitation</strong> : Vous pouvez demander la limitation du traitement de vos données.</li>
+    </ul>
+
+    <h2>7. Comment Exercer Vos Droits ?</h2>
+    <p>Pour exercer l’un de vos droits, contactez-nous à :</p>
+    <div class="contact-info">
+        <p><strong>Email :</strong> contact@mnconseildigital.fr</p>
+        <p>Nous répondrons à votre demande sous 30 jours (conformément au RGPD).</p>
+    </div>
+
+    <h2>8. Cookies et Technologies Similaires</h2>
+    <p>
+        Notre application n’utilise pas de cookies au sens traditionnel (nous sommes une application mobile, pas un site web).
+        Cependant, nous utilisons :
+    </p>
+    <ul>
+        <li><strong>Firebase Analytics</strong> (optionnel) : Pour analyser l’utilisation de l’application (données anonymisées).</li>
+        <li><strong>Identifiants d’appareil</strong> : Pour des raisons de sécurité et de personnalisation.</li>
+    </ul>
+    <p>Vous pouvez désactiver Firebase Analytics dans les paramètres de l’application.</p>
+
+    <h2>9. Sécurité des Mineurs</h2>
+    <p>
+        Ma Billetterie Sereine n’est pas destinée aux enfants de moins de 16 ans.
+        Nous ne collectons pas sciemment des données de mineurs.
+        Si vous êtes un parent et que vous découvrez que votre enfant a utilisé notre application,
+        veuillez nous contacter pour que nous supprimions ses données.
+    </p>
+
+    <h2>10. Modifications de cette Politique</h2>
+    <p>
+        Nous pouvons mettre à jour cette politique de temps à autre.
+        Les modifications seront publiées sur cette page avec une date de mise à jour claire.
+        Nous vous encourageons à consulter cette page régulièrement.
+    </p>
+    <p>
+        En cas de modifications majeures, nous vous en informerons par email ou via une notification dans l’application.
+    </p>
+
+    <h2>11. Nous Contacter</h2>
+    <div class="contact-info">
+        <p><strong>Email :</strong> contact@mnconseildigital.fr</p>
+        <p><strong>Site web :</strong> <a href="https://www.mnconseildigital.fr">https://www.mnconseildigital.fr</a></p>
+    </div>
+
+    <p class="last-update">Dernière mise à jour : 4 juillet 2026</p>
+</body>
+</html>
